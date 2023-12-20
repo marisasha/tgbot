@@ -4,7 +4,7 @@ import time
 
 
 while True:
-
+# использовать впн для корректной работы
     url = "https://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=368e827be4b38db51ff960ca88b5c396"
     req = round((requests.get(url).json()["main"]["temp"]) -274)
     now_time = datetime.datetime.now().strftime("%y.%m.%d")
